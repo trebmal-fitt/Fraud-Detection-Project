@@ -16,15 +16,15 @@ Within this project, you will create a comprehensive machine learning pipeline t
 
 This dataset contains a mix of categorical and numerical variables. The data-dictionary below describes what each column represents:
 
-* Type: The type of transaction   
-* Amount: The amount of money transferred   
-* NameOrig: The origin account name  
-* OldBalanceOrg: The origin accounts balance before the transaction 
-* NewBalanceOrig: The origin accounts balance after the transaction   
-* NameDest: The destination account name   
-* OldbalanceDest: The destination accounts balance before the transaction 
-* NewbalanceDest: The destination accounts balance after the transaction 
-* IsFlaggedFraud: A “naive” model that simply flags a transaction as fraudulent if it is greater than 200,000 (note that this currency is not USD)   
+* type: The type of transaction   
+* amount: The amount of money transferred   
+* nameOrig: The origin account name  
+* oldbalanceOrg: The origin accounts balance before the transaction 
+* newbalanceOrig: The origin accounts balance after the transaction   
+* nameDest: The destination account name   
+* oldbalanceDest: The destination accounts balance before the transaction 
+* newbalanceDest: The destination accounts balance after the transaction 
+* isFraud: A “naive” model that simply flags a transaction as fraudulent if it is greater than 200,000 (note that this currency is not USD)   
 * IsFraud: Was this simulated transaction actually fraudulent? In this case, we consider “fraud” to be a malicious transaction that aimed to transfer funds out of a victim’s bank account before the account owner could secure their information. (This will be your target variable)   
 
 Note that not all variables are important for this prediction task. Namely, all bank accounts are susceptible to being targets of fraudulent activity, so we most likely want to remove all columns that identify bank account information, and solely observe numerical predictors.
